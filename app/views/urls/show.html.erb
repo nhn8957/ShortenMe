@@ -1,4 +1,5 @@
-<h5>Original URL: <%= @url.original_url%></h5>
-<h5>Shortened: localhost:3000/<%= @url.output_url %> </h5>
-<p><%= @url.created_at %></p>
-<p> ID: <%= @url.id %> </p>
+<%= stylesheet_link_tag "style_show" %>
+
+<h1>Information</h1>
+<p>Your original URL: <%= @url.original_url %></p>
+<p>Shortened URL: localhost:3000/<%= @url.output_url %> </p>

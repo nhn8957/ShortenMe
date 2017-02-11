@@ -1,0 +1,26 @@
+
+
+body {
+	text-align: center;
+	padding: 220px;
+   font-family: Helvetica, Geneva, Arial, sans-serif;
+   font-size: large;
+   font-color: #000;
+   background-color: #e5e6eb;
+}
+
+.row {
+	align-self: center;
+	padding: 25px 200px;	
+
+}
+
+.display-4 {
+	font-color: #ffffff;
+	
+}
+
+.header {
+	font-size: xx-large;
+	
+}

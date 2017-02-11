@@ -1,11 +1,23 @@
-Paste an URL:
-<%= form_for :url, url: urls_path do |f| %>
-  <p>
-    <%= f.label :original_url %><br>
-    <%= f.url_field :original_url %>
-  </p>
+<%= stylesheet_link_tag "style" %>
 
-  <p>
-    <%= f.submit %>
-  </p>
-<% end %>
+<% :alert %> 
+
+<div class="container" align="center">
+
+	<h1 class="display-4">URL Shortening Service</h1>
+	<%= form_for :url, url: urls_path do |f| %>
+
+		<div class="row">
+		  <div class="col-lg-12">
+		    <div class="input-group">
+		      <%= f.url_field :original_url, class: "form-control", placeholder: "Paste your URL here.." %>
+		      <span class="input-group-btn">
+		        <button type= "submit" class="btn btn-secondary" type="button">Shorten</button>
+		      </span>
+		    </div>
+		  </div>
+		</div>
+ 
+	<% end %>
+
+</div>

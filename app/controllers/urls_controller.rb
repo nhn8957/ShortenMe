@@ -14,8 +14,7 @@ class UrlsController < ApplicationController
 				@url.save
 				redirect_to @url
 			else
-				raise 'afsasf' 
-				redirect_to root_path #invalid url
+				redirect_to root_path
 			end	
 		end
 	end
@@ -30,7 +29,7 @@ class UrlsController < ApplicationController
 			impressionist(@url) #count redirection here
 			redirect_to @url.original_url
 		else
-			redirect_to root_path #404 page
+			redirect_to root_path, alert: "Sorry, your request is not valid"
 		end	
 	end
 
@@ -38,7 +37,7 @@ class UrlsController < ApplicationController
 		if @url = Url.find_by(output_url: params[:request])
 			@url = Url.find_by(output_url: params[:request])
 		else
-			redirect_to root_path #404 page
+			redirect_to root_path, alert: "Sorry, your request is not valid" 
 		end
 	end
 
@@ -49,7 +48,7 @@ private
 
 	end
 
-	def shorten(i, a)	
+	def shorten(i, a)	#needs clearer rewriting
 		s = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
   		a = a + s[i%62];
   		if i < 62 then

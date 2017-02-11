@@ -1,3 +1,5 @@
-<h1> Stat for localhost:3000/<%= @url.output_url %>:</h1>
+<%= stylesheet_link_tag "style_show" %>
+
+<h1> Statistics for localhost:3000/<%= @url.output_url %>:</h1>
 <p> Original URL: <%= @url.original_url %> </p>
 <p> Total hit: <%= @url.impressionist_count %></p>
