@@ -42,15 +42,15 @@ The method will take a base-10 integer and convert it into a unique string.
 **Retrieval:** 
 
 ```erb
-def redirect
-		if @url = Url.find_by(output_url: params[:request])
-			@url = Url.find_by(output_url: params[:request])
-			impressionist(@url) #count redirection here
-			redirect_to @url.original_url
-		else
-			redirect_to root_path, alert: "Sorry, your request is not valid"
-		end	
-	end
+def redirecte	
+if @url = Url.find_by(output_url: params[:request])
+		@url = Url.find_by(output_url: params[:request])
+		impressionist(@url) #count redirection here
+		redirect_to @url.original_url
+	else
+		redirect_to root_path, alert: "Sorry, your request is not valid"
+	nd	
+end
 ```
 
 When a user submit a request, the redirect method will search in the database for an :output_url that matches the user's request. If there is none, the user will be redirected to the home page.
