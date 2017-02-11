@@ -62,10 +62,10 @@ Unfortunately, I left out data visualization due to time constraint.
 **Front-end:**
 I use Bootstrap and basic HTML/CSS for my app.
 
-##### Challenges:
+**Challenges:**
 * With this app, the biggest technical challenge I faced was the third requirement: data visualization. I have little experience working with it, and was not able to implement all the functionalities in time.
 
-* Sqlite3: Just as I was pushing the app to Heroku, I realized I was not using Postgresql. I ended up having to ask for 1 additional hour.
+* **SQLite and heroku**: Just as I was pushing the app to Heroku, I realized I was not using Postgresql and could not finish. I ended up having to call Mr Huy and ask for 1 hour more. 
 
 * Working on this was really difficult. However, I learned a lot during the process, and I hope to have the chance to continue at your company.
 
