@@ -3,20 +3,19 @@
 ## Holistics interview assignment 
 #### Applicant: Nhiem Ngo
 
-### Deployed app on Heroku
-[http://desolate-atoll-73195.herokuapp.com/]
+### Deployed app on Heroku:
+
+http://desolate-atoll-73195.herokuapp.com/
 
 ### Users can:
 
-*input a URL and get it shortened.
-*be redirected to the correct URL when enter the shortened URL’s link
-*have analytics with basic numbers at http://desolate-atoll-73195.herokuapp.com//[code]/stat
+* Submit an URL and get it shortened.
+* Be redirected to the correct URL when enter the shortened URL’s link
+* Access analytics with basic numbers at http://desolate-atoll-73195.herokuapp.com//[code]/stat
 
 ### My progress:
 
-My background: some experiences working with Ruby on Rails
-
-#####Back-end
+**My background:** experiences working with Ruby on Rails. 
 
 **Framework:** I decided to use Ruby on Rails as the main framework of this project since I have most experience with it.
 
@@ -40,7 +39,7 @@ end
 
 The method will take a base-10 integer and convert it into a unique string.
 
-*Retrieval:* 
+**Retrieval:** 
 
 ```erb
 def redirect
@@ -54,18 +53,21 @@ def redirect
 	end
 ```
 
-When a user submit a request, the redirect method will search in the database for an output_url that matches the user's request. If there is none, the user will be redirected to the home page.
+When a user submit a request, the redirect method will search in the database for an :output_url that matches the user's request. If there is none, the user will be redirected to the home page.
 
-*Hit count:* I use the [Impressionist](https://github.com/charlotte-ruby/impressionist) gem to count each time the redirect method is used. The hit count is displayed at /[code]/stat
-Unfortunately, I left out data visualization. 
+**Hit count:** I use the [Impressionist](https://github.com/charlotte-ruby/impressionist) gem to count every time the redirect method is used. The hit count is displayed at /[code]/stat
 
-#####Front-end:
-I use Bootstrap and basic html/css for my app.
+Unfortunately, I left out data visualization due to time constraint. 
+
+**Front-end:**
+I use Bootstrap and basic HTML/CSS for my app.
 
 ##### Challenges:
-* With this app, the biggest challenge I faced was the third requirement: data visualization. I have little experience working with it, and was not able to implement all the functionalities in time.
+* With this app, the biggest technical challenge I faced was the third requirement: data visualization. I have little experience working with it, and was not able to implement all the functionalities in time.
 
-* Sqlite3: Just as I was pushing the app to Heroku, I realized I was not using Postgresql. I ended up having to ask for 1 additional hour. 
+* Sqlite3: Just as I was pushing the app to Heroku, I realized I was not using Postgresql. I ended up having to ask for 1 additional hour.
+
+* Working on this was really difficult. However, I learned a lot during the process, and I hope to have the chance to continue at your company.
 
 ##Thank you!
  
